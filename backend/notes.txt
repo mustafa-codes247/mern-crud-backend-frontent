@@ -1,0 +1,11 @@
+we first installed npm init -y
+then , npm i express mongoose nodemon cors
+
+cors is used for having same website to two urls ,
+because in backend url is different and backend url is different ,
+without cors it blocks the access.
+
+then in json file we added
+"type": "module"
+"start": "nodemon server.js"
+
