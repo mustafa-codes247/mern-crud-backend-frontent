@@ -6,10 +6,11 @@ const app= express();
 
 app.use(express.json());
 app.use(cors());
-const PORT = 5000;
+const PORT = 8080;
 
 app.use('/api',routers);
-mongoose.connect("mongodb://localhost:27017/crud")
+mongoose
+.connect("mongodb://localhost:27017/crud")
 .then((res)=>console.log('connected'));
 
 
